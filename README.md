@@ -177,7 +177,7 @@ export let options = {
   duration: '30s',
   ext: {
     loadimpact: {
-      projectID: 3642801,
+      projectID: XXXXXXXX,
       name: 'perf-test'
     }
   }
