@@ -15,6 +15,16 @@
         <input type="submit" value="Submit">
     </form>
     <br>
+    <button onclick="fetch('/large-response')">Large Response</button>
+    <button onclick="fetch('/complex-calculation')">Complex Calculation</button>
+    <br>
     <button onclick="alert('Button clicked!')">Click me</button>
+    <script>
+        function fetch(url) {
+            return window.fetch(url)
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
+    </script>
 </body>
-</html>
